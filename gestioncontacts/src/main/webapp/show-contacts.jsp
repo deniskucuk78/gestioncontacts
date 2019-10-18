@@ -26,6 +26,7 @@
 		<label for="prenom"> Prenom :</label> <input type="text" name="prenom" id="prenom">												
 													
 	   <br> <input type="submit" value="Valider"/>
+	    <br>
 		
 	
 	</form>
@@ -40,6 +41,8 @@
 	<tr><td> ${contact.nom} </td>
 		<td> ${contact.prenom }</td>
 		<td><a href="SupprimerContactServlet?id=${contact.id }">(X)</a></td>
+		<td><a href="ModifierContactServlet?id=${contact.id }">Modifier</a></td>
+		
 	</tr>
 	
 </c:forEach>

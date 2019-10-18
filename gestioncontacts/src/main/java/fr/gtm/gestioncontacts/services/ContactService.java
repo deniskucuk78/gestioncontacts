@@ -2,6 +2,7 @@ package fr.gtm.gestioncontacts.services;
 
 import java.util.List;
 
+import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 
 
@@ -32,6 +33,10 @@ public class ContactService {
 	
 	public void create(Contact contact) {
 		dao.create(contact);
+	}
+	
+	public void update(Contact contact) {
+		dao.update(contact);
 	}
 	
 
